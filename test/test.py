@@ -44,6 +44,7 @@ async def test_project(dut):
 
         # Wait for one clock cycle to see the output values
         await ClockCycles(dut.clk, 1)
+        print("Output: {} | Expected: {}".format(dut.uo_out.value:08b, c:08b))
         assert dut.uo_out.value == c, f"Mismatch! Expected {c:08b}, got {dut.uo_out.value:08b}"
 
     # Keep testing the module by changing the input values, waiting for
