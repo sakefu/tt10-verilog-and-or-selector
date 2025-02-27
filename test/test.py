@@ -34,7 +34,7 @@ async def test_project(dut):
         (0b01111111, 0b10000000, 0b01111111),
         (0b10101010, 0b01010101, 0b10000000),
         (0b01010101, 0b01010101, 0b01010101),
-    ]
+    ] 
 
     # Set the input values you want to test
 
